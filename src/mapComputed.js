@@ -4,7 +4,7 @@ export const mapComputed = (module, fields) => {
   fields.forEach(field => {
     const name = field.name || field.getter || field;
     const getter = field.getter || field;
-    const setter = field.setter || `set${field.firstToUpper()}`;
+    const setter = field.setter || `set${firstToUpper(field)}`;
     obj[name] = {
       get() {
         return this.$store.getters[`${module}/${getter}`];
@@ -19,3 +19,7 @@ export const mapComputed = (module, fields) => {
 
   return obj;
 };
+
+function firstToUpper(text) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
