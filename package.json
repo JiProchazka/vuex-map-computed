@@ -1,0 +1,28 @@
+{
+  "name": "vuex-map-computed",
+  "version": "1.0.0",
+  "description": "Adds ...mapComputed to Vuex",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "babel --presets env --out-dir dist src",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JiProchazka/mapComputed.git"
+  },
+  "keywords": [
+    "vue",
+    "vuex"
+  ],
+  "author": "Jiří Procházka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JiProchazka/mapComputed/issues"
+  },
+  "homepage": "https://github.com/JiProchazka/mapComputed#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
