@@ -56,7 +56,7 @@ computed: {
 
 You can skip the `name`, in such case a value of `getter` is used as the name.
 
-**Only modules are supported. That means you can't use this methods with root store!**
+**Only modules are supported. That means you can't use this method with root store!**
 
 ## License
 
